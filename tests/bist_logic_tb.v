@@ -55,25 +55,25 @@ module bist_logic_tb;
         #10
         rst = 0;
         $display ( "Test user mode");
-//        test_bist_1(1, 0, 0, 0);
-//        test_bist_1(2, 1, 1, 1);
-//        test_bist_1(3, 12, 60, 3);
-//        test_bist_1(4, 123, 223, 11);
-//        test_bist_1(5, 255, 255, 16);
-//        test_bist_1(6, 255, 30, 16);
-//        test_bist_1(7, 30, 255, 6);
-//        test_bist_1(8, 1, 255, 2);  
-//        test_bist_1(9, 255, 1, 16);
-//        test_bist_1(10, 45, 64, 7);
+        test_bist_1(1, 0, 0, 0);
+        test_bist_1(2, 1, 1, 1);
+        test_bist_1(3, 12, 60, 3);
+        test_bist_1(4, 123, 223, 11);
+        test_bist_1(5, 255, 255, 16);
+        test_bist_1(6, 255, 30, 16);
+        test_bist_1(7, 30, 255, 6);
+        test_bist_1(8, 1, 255, 2);  
+        test_bist_1(9, 255, 1, 16);
+        test_bist_1(10, 45, 64, 7);
         
         $display ( "Test bist mode");
         test_button = 1;
         #1000
         test_button = 0;
         test_bist_2(1, 13'b0001001010001);
-//        test_bist_2(2, 13'b0010001010001);
-//        test_bist_2(3, 13'b0011001010001);
-//        test_bist_2(4, 13'b0100001010001);
+        test_bist_2(2, 13'b0010001010001);
+        test_bist_2(3, 13'b0011001010001);
+        test_bist_2(4, 13'b0100001010001);
     end   
     
     always begin
